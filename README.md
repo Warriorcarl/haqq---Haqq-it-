@@ -1,5 +1,7 @@
 # haqq---Haqq-it-
 
+Validators geolocation stats tool   
+
 Простенькие скрипты, которыми можно проверить распределение нод HAQQ по :
 - хостингу
 - стране
