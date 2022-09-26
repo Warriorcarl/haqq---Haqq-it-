@@ -1,11 +1,4 @@
-
 source $HOME/.bash_profile
-
-DIR=$HOME/logs
-LOG=$DIR/`basename $0 .sh`.log
-
-echo "***" | tee -a $LOG;
-echo `date` Start `basename $0 .sh` | tee -a $LOG;
 
 ##
 ADDRBOOK=$DATA_DIR/config/addrbook.json
@@ -33,13 +26,13 @@ do
     echo $CITY >> $FILE_CITY ;
     COUNT=$(($COUNT+1)) ;
 done < $FILE_ADDR
-echo 'Number of IP addr :' $COUNT | tee -a $LOG; 
+echo 'Number of IP addr :' $COUNT
 
 ##
-echo "Country top 10:" | tee -a $LOG;
+echo "Country top 10:"
 cat $FILE_COUNTRY | sort | uniq -c |  sort -k1 -n -r |head -n10
-echo "Org top 10:" | tee -a $LOG;
+echo "Org top 10:"
 cat $FILE_ORG | sort | uniq -c |  sort -k1 -n -r |head -n10
-echo "City top 10:" | tee -a $LOG;
+echo "City top 10:"
 cat $FILE_CITY | sort | uniq -c |  sort -k1 -n -r |head -n10
 
