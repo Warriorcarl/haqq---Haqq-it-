@@ -1,3 +1,4 @@
+export DATA_DIR=/home/haqq/.haqqd
 source $HOME/.bash_profile
 
 ##
