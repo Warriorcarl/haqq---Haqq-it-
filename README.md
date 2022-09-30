@@ -9,9 +9,9 @@ country
 city
 Allows to analyze how deep down the blockchain will go if an unexpected shutdown of a conditional Hetzner.
 
-In order to work you have to write environment variable in '.bash_profile'
+In order to work you have to write environment variable in `.bash_profile`
 
-'export DATA_DIR=/home/haqq/.haqqd'
+`export DATA_DIR=/home/haqq/.haqqd`
 
 An example output of the script below:
 
