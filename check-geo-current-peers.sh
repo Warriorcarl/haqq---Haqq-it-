@@ -9,7 +9,7 @@ FILE_ORG=org.txt
 FILE_CITY=city.txt
 
 ##
-curl -s http://localhost:$RPC_PORT/net_info | jq | grep -e "remote_ip" \
+curl -s http://localhost:${HAQQ_PORT}657/net_info | jq | grep -e "remote_ip" \
 | awk '{print $2}' | tr -d "," | xargs | fmt -w 1 | sort -u  > $FILE_ADDR
 
 ##
